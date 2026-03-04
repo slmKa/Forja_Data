@@ -1,0 +1,12 @@
+.env
+.env
+
+# Spark temp & offsets
+offsets/
+
+# Logs
+logs/
+
+# Credentials sensibles (GA4 / Google Cloud)
+producers/credentials.json
+producers/forja-service-account.json
