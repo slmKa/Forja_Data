@@ -1,12 +1,53 @@
+# ========================
+# SECRETS & CREDENTIALS
+# ========================
 .env
-.env
-
-# Spark temp & offsets
-offsets/
-
-# Logs
-logs/
-
-# Credentials sensibles (GA4 / Google Cloud)
 producers/credentials.json
 producers/forja-service-account.json
+*.json
+!package.json
+
+# ========================
+# LOGS
+# ========================
+logs/
+*.log
+
+# ========================
+# SPARK TEMPORAIRE
+# ========================
+offsets/
+spark-warehouse/
+derby.log
+metastore_db/
+
+# ========================
+# DATALAKE (données brutes)
+# ========================
+datalake/
+
+# ========================
+# PYTHON
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# ========================
+# JARS (fichiers Java lourds)
+# ========================
+spark_jobs/jars/
+spark_docker/jars/
+
+# ========================
+# FICHIERS SYSTEME
+# ========================
+._*
+.DS_Store
+
+# ========================
+# SCRIPTS LOCAUX
+# ========================
+check_pipeline.sh
